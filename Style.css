@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outercircle{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innercircle{
+    width: 230px;
+    height: 230px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+.min{
+    font-size: 45px;
+}
+.sec{
+    font-size: 38px;
+}
+.msec{
+    font-size: 31px;
+}
+.button-wrapper{
+    width: 250px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color:black;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+.laps{
+    list-style: none;
+    color: rgb(0, 0, 0);
+    width: 250px;
+    height: 250px;
+    overflow: auto;
+    position: relative;
+    margin-top: 30px
+}
+.laps::-webkit-scrollbar{
+    display: none;
+}
+.lap-item{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #444;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+.number{
+    color: #CCCC;
+}
+.timestamp{
+    display: inline-block;
+    margin-left: 25px;
+}
+.lap-clear-button{
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    bottom: 35px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 130px;
+    padding: 10px 0;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.hidden{
+    visibility: hidden;
+}

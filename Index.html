@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch by Abhay Kumar</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="watch">
+            <div class="outercircle">
+                <div class="innercircle">
+                    <span class="text min"></span>
+                    <span class="text sec"></span>
+                    <span class="text msec"></span> 
+                </div>
+            </div>
+            <div class="button-wrapper">
+                <button class="button reset">Reset</button>
+                <button class="button Play">Play</button>
+                <button class="button Lap">Lap</button>
+            </div>
+        </div>
+        <ul class="laps">
+            <li class="lap-item">
+                <span class="number"></span>
+                <span class="timestamp"></span>
+            </li>
+            <button class="lap-clear-button">Clear All</button>
+        </ul>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
